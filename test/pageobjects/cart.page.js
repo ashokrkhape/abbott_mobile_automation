@@ -10,29 +10,29 @@ class CartPage extends Page {
      */
 
     productNames() {
-        return $$('[resource-id="com.androidsample.generalstore:id/productName"]')
+        return $$('[resource-id="com.androidsample.generalstore:id/productName"]');
     }
 
     productPrices() {
-        return $$('[resource-id="com.androidsample.generalstore:id/productPrice"]')
+        return $$('[resource-id="com.androidsample.generalstore:id/productPrice"]');
     }
 
     priceLabelByProductName(productName) {
         return $(`//*[@resource-id="com.androidsample.generalstore:id/productName" 
                 and @text="${productName}"]/..
-                //*[@resource-id="com.androidsample.generalstore:id/productPrice"]`)
+                //*[@resource-id="com.androidsample.generalstore:id/productPrice"]`);
     }
 
     cartTotalLabel() {
-        return $('[resource-id="com.androidsample.generalstore:id/totalAmountLbl"]')
+        return $('[resource-id="com.androidsample.generalstore:id/totalAmountLbl"]');
     }
     
     sendEmailsCheckbox() {
-        return $('[text="Send me e-mails on discounts related to selected products in future"]')
+        return $('[text="Send me e-mails on discounts related to selected products in future"]');
     }
 
     proceedButton() {
-        return $('[resource-id="com.androidsample.generalstore:id/btnProceed"]')
+        return $('[resource-id="com.androidsample.generalstore:id/btnProceed"]');
     }
     /**
      * a method to encapsule automation code to interact with the page

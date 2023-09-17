@@ -9,7 +9,7 @@ class HomePage extends Page {
      * define selectors
      */
 
-    countryList() {
+    countryListButton() {
         return $('#spinnerCountry');
     }
 
@@ -35,11 +35,11 @@ class HomePage extends Page {
      */
 
     async isScreenDisplayed() {
-        return await this.countryList().isDisplayed();
+        return await this.countryListButton().isDisplayed();
     }
 
     async selectCountry(countryName) {
-        await this.countryList().click();
+        await this.countryListButton().click();
         await this.scrollUntilElementVisible(countryName);
         await this.countryValue(countryName).click();
     }
