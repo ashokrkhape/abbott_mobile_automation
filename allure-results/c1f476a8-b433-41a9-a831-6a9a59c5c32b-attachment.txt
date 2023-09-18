@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "[text=\"Send me e-mails on discounts related to selected products in future\"]"
-}
