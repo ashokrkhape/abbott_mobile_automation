@@ -9,7 +9,7 @@
 
 ## Steps to run tests
 1. Make sure `JAVA_HOME` and `ANDROID_HOME` environment variables are set 
-2. Add `adb` path to systems's `PATH` variable
+2. Add android's SDK path to systems's `PATH` variable
 3. Start android emulator using Android Virtual Device Manager
 4. Replace below attributes of the `capabilities` object in `wdio.conf.js` with your emulator's properties
     * appium:deviceName
