@@ -1,4 +1,5 @@
 import { browser } from '@wdio/globals'
+import Utility from '../../utilities/utility.js'
 
 /**
 * main page object containing all methods, selectors and functionality
@@ -6,9 +7,9 @@ import { browser } from '@wdio/globals'
 */
 export default class Page {
 
-    async getNumberFromAmount(amountElement) {
+    async convertAmountToNumber(amountElement, currency) {
         const amount = await amountElement.getText();
-        return parseInt(amount.replace(/\$/g, ''));
+        return Utility.getNumberFromAmount(amount, currency);
     }
 
     async scrollUntilElementVisible(elementText) {

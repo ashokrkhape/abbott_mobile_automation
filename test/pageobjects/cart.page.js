@@ -51,9 +51,9 @@ class CartPage extends Page {
     }
 
     async verifyCartTotal() {
-        const sumOfPrices = await this.productPrices().map(async price => await this.getNumberFromAmount(price))
+        const sumOfPrices = await this.productPrices().map(async price => await this.convertAmountToNumber(price, '$'))
                      .reduce((sum, price) => sum + price, 0);
-        const cartTotal = await this.getNumberFromAmount(this.cartTotalLabel());
+        const cartTotal = await this.convertAmountToNumber(this.cartTotalLabel(), '$');
         return sumOfPrices === cartTotal;
         
     }
