@@ -15,7 +15,7 @@
     * appium:deviceName
     * appium:platformVersion
 5. Place the app to be tested in `./app` directory
-6. Run `npm install` for install packages
+6. Run `npm install` for installing packages
 7. Run `npm run test` for running testcases
 8. Run `npm run reports` for viewing reports
     
