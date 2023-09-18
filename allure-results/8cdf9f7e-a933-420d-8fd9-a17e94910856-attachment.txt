@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[resource-id=\"com.androidsample.generalstore:id/appbar_btn_cart\"]"
+}

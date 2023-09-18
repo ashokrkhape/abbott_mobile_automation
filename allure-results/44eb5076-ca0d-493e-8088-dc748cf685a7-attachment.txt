@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"com.androidsample.generalstore:id/productName\" and @text=\"PG 3\"]/..\n                //*[@resource-id=\"com.androidsample.generalstore:id/productAddCart\"]"
+}

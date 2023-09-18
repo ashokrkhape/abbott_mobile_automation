@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[resource-id=\"android:id/text1\"][text=\"India\"]"
+}
